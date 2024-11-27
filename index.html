@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Déploiement WEB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #83b5e6;
+            color: #120a1b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: #2a0acd;
+            padding: 50px;
+            border-radius: 50px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        #title {
+            font-size: 2.5em;
+            color: #64e80ce9;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.5em;
+            color: #d1e916;
+            margin-bottom: 20px;
+        }
+        .author {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #169abf;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2b7fd3;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #beeb0c;
+        }
+        #name{
+            text-size-adjust: 50px;
+            color: #e90c0c;
+        }
+        .author
+        {
+            color: #e90c0c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Projet Déploiement WEB</h1>
+        <h2 class="subtitle">L3_SEM</h2>
+        <p class="author">Réalisé par : <span id="name">Majdi Dridi</span></p>
+        <button id="infoButton">Afficher un message</button>
+        <p id="message" style="display: none;">Bienvenue sur le projet de déploiement WEB !</p>
+    </div>
+    <script>
+        document.getElementById('infoButton').addEventListener('click', function () {
+            const message = document.getElementById('message');
+            if (message.style.display === 'none') {
+                message.style.display = 'block';
+            } else {
+                message.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
